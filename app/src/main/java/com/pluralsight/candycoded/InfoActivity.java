@@ -41,4 +41,9 @@ public void createMapIntent (View view){
     // ***
     // TODO - Task 3 - Launch the Phone Activity
     // ***
+    public void createPhoneIntent(View view) {
+        Intent callNumber = new Intent (Intent.ACTION_DIAL);
+        callNumber.setData(Uri.parse("tel:0123456789"));
+        startActivity(callNumber);
+    }
 }
